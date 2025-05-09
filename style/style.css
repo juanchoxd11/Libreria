@@ -1,0 +1,103 @@
+body {
+    background: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    background: linear-gradient(90deg, #ff6f61, #ffcc00);
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  header:hover {
+    filter: brightness(1.05);
+  }
+  
+  footer {
+    background: #343a40;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  footer a {
+    color: #ffc107;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+    color: #ffdd57;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.8rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .btn-outline-primary.active {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: black;
+  }
+  
+  .btn-outline-primary {
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #ffe066;
+    color: #333;
+  }
+  
+  .btn-primary {
+    background-color: #ff6f61;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e65c50;
+  }
+  
+  .book-img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover .book-img {
+    transform: scale(1.05);
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  #search-results {
+    display: none;
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
